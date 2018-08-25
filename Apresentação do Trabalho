@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int i, contador=0,  Interface_grafica, Inteligencia_Artificial, Encapsulamento, Indentacao, Uso_de_Structs;
+		
+		for(i=0; i<1; i++){
+			Interface_grafica = in.nextInt();
+			Inteligencia_Artificial = in.nextInt();
+			Encapsulamento = in.nextInt();
+			Indentacao = in.nextInt();
+			Uso_de_Structs = in.nextInt();
+			
+			if(Interface_grafica == 1 || Inteligencia_Artificial == 1)
+			    contador += 1;
+			if(Encapsulamento == 1 && Indentacao == 1)
+			    contador += 1;
+			if(Uso_de_Structs == 1)
+			    contador += 1;
+
+			if(contador >= 3)
+			   System.out.printf("%s", "AVALIADO");
+			else
+				System.out.printf("%d",0);
+		}
+}
+}
