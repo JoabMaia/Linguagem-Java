@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int num, alg;
+		
+		num = Integer.parseInt(in.nextLine());
+		
+		alg = num % 10;
+		
+		if(num < 0) {
+			alg += -10;
+		}
+		
+		System.out.printf("%d\n", alg);		
+}
+}
