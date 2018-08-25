@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double valor1, valor2, valor3, media;
+		int cont=0;
+		
+		valor1 = Double.parseDouble(in.nextLine());
+		valor2 = Double.parseDouble(in.nextLine());
+		valor3 = Double.parseDouble(in.nextLine());
+		
+		media = (valor1+valor2+valor3)/3;
+		
+		if(valor1>media){
+	        cont+=1;
+	    }
+	    if(valor2>media){
+	        cont+=1;
+	    }
+	    if(valor3>media){
+	        cont+=1;
+	    }
+	    
+	    System.out.printf("%d\n", cont);
+}
+}
