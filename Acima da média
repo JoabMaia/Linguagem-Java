@@ -14,13 +14,13 @@ public class treino_aula{
 		
 		if(valor1>media){
 	        cont+=1;
-	    }
-	    if(valor2>media){
+	    	}
+	    	if(valor2>media){
 	        cont+=1;
-	    }
-	    if(valor3>media){
+	    	}
+	    	if(valor3>media){
 	        cont+=1;
-	    }
+	    	}
 	    
 	    System.out.printf("%d\n", cont);
 }
