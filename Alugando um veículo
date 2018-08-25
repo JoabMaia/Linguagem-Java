@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int quantidade, quilometragem;
+		float valor;
+		
+		quantidade = Integer.parseInt(in.nextLine());
+		quilometragem = Integer.parseInt(in.nextLine());
+		
+		valor = quantidade * 90;
+		
+		if(quilometragem > quantidade * 100) 
+			valor = valor + ((quilometragem)-(quantidade*100)*12);
+			System.out.printf("%.2f\n", valor);
+}
+}
