@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double quantosdias, quantosquilometros, resultado;
+		
+		quantosdias = Double.parseDouble(in.nextLine());
+		quantosquilometros = Double.parseDouble(in.nextLine());
+		
+		resultado = (((quantosdias * 30) + (quantosquilometros * 0.01)) * 0.9);
+		
+		System.out.printf("%.2f\n", resultado);
+}
+}
