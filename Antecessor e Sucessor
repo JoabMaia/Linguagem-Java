@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int valor;
+		
+		valor = Integer.parseInt(in.nextLine());
+		
+		System.out.printf("%d %d", valor - 1, valor + 1);		
+}
+}
