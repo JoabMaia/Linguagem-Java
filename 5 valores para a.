@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double  vetor[] = new double[6];
+		int i, cont=0;
+		
+		for(i=0; i<5; i++) {
+			vetor[i] = Double.parseDouble(in.nextLine());;
+			if(vetor[i]<0)
+		        cont+=1;
+		}
+		
+		System.out.printf("\nDigite um valor:");
+		System.out.printf("\nDigite um valor:");
+		System.out.printf("\nDigite um valor:");
+		System.out.printf("\nDigite um valor:");
+		System.out.printf("\nDigite um valor:");
+		System.out.printf("\nForam digitados %d numeros negativos", cont);		
+}
+}
