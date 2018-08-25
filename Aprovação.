@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double nota1, nota2, nota3, media;
+		
+		nota1 = Double.parseDouble(in.nextLine());
+		nota2 = Double.parseDouble(in.nextLine());
+		nota3 = Double.parseDouble(in.nextLine());
+		
+		media = (nota1 + nota2 + nota3) / 3;
+		
+		if(media >= 7.0) {
+			  System.out.printf("%s\n", "Informe a primeira nota:");
+			  System.out.printf("%s\n", "Informe a segunda nota:");
+			  System.out.printf("%s\n", "Informe a terceira nota:");
+			  System.out.printf("%s %.1f\n", "Aprovado com media",media);
+		}
+		else if(media >= 5.0 && media < 7.0){
+			  System.out.printf("%s\n", "Informe a primeira nota:");
+			  System.out.printf("%s\n", "Informe a segunda nota:");
+			  System.out.printf("%s\n", "Informe a terceira nota:");
+			  System.out.printf("%s %.1f\n", "Recuperacao com media",media);
+		}
+		else if(media < 5.0){
+			System.out.printf("%s\n", "Informe a primeira nota:");
+			  System.out.printf("%s\n", "Informe a segunda nota:");
+			  System.out.printf("%s\n", "Informe a terceira nota:");
+			  System.out.printf("%s %.1f\n", "Reprovado com media",media);
+		}
+}
+}
