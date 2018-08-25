@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int x1=1, y;
+		
+		while(x1>0) {
+		x1 = Integer.parseInt(in.nextLine());
+		if(x1>0) {
+			y = (int)x1/2;
+			y += 1;
+			System.out.printf("\n%d - %d",y*y, (y-1)*(y-1));
+		}
+		else {
+			break;
+		}		
+}
+}
+}
