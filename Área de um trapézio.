@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		in.useLocale(Locale.ENGLISH);
+		double base_menor, base_maior, altura, area;
+		
+		base_menor = Double.parseDouble(in.nextLine());
+		base_maior = Double.parseDouble(in.nextLine());
+		altura = Double.parseDouble(in.nextLine());
+	    
+		area = ((base_maior + base_menor) * altura)/2;
+		
+	    System.out.printf("%.1f\n", area);
+}
+}
