@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		in.useLocale(Locale.ENGLISH);
+		double raio,area;
+		
+		raio = Double.parseDouble(in.nextLine());
+	    
+		area = (3.14159 *((raio/100) * (raio/100)));
+		
+	    System.out.printf("Area = %.4f\n", area);
+}
+}
