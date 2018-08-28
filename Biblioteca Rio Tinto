@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int dias;
+		double atraso;
+		
+		dias = Integer.parseInt(in.nextLine());
+		
+		atraso = dias * 0.75;
+		
+		System.out.printf("%.2f", atraso);
+}
+}
