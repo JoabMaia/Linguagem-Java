@@ -8,7 +8,7 @@ public class treino_aula{
 		
 		salario = Double.parseDouble(in.nextLine());
 	    
-		if(salario > 300 && salario < 500){
+	    if(salario > 300 && salario < 500){
 	        resultado = salario * 1.07;
 	        System.out.printf("%.2f\n", resultado);
 	    }
