@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int num;
+		
+		num = Integer.parseInt(in.nextLine());
+		
+		System.out.printf("O numero sorteado foi: %d\n",num);
+}
+}
