@@ -10,7 +10,7 @@ public class treino_aula{
 		  raio2 = Double.parseDouble(in.nextLine());
 	    
 		  area1 = 3.14*(raio1*raio1);
-	    area2 = 3.14*(raio2*raio2);
+	    	  area2 = 3.14*(raio2*raio2);
 	    
 	    if(area1>area2){
 	        System.out.printf("Primeiro circulo\n");
