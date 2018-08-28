@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double salario, resposta, valor, valor1, resposta1;
+		
+		salario = Double.parseDouble(in.nextLine());
+		
+		if(salario < 1000.00){
+	        valor = (salario * 30)/100;
+	        resposta = (salario + valor);
+	        System.out.printf("%.2f", resposta);
+	    }
+	    else if(salario >= 1000.00 && salario <= 2000.00){
+	        valor1 = (salario * 10)/100;
+	        resposta1 = (salario + valor1);
+	        System.out.printf("%.2f", resposta1);
+	    }
+	    else{
+	        System.out.printf("%.2f", salario);
+	    }
+}
+}
