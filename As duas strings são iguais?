@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		in.useLocale(Locale.ENGLISH);
+		String string1, string2;
+		
+		string1 = in.next();
+		string2 = in.next();
+	    
+		if(string1.equals(string2)) {
+			System.out.println("IGUAIS");
+		}
+		else {
+			System.out.println("DIFERENTES");
+		}
+}
+}
