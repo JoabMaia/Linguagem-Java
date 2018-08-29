@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		in.useLocale(Locale.ENGLISH);
+		int x, y=4;
+		
+		x = Integer.parseInt(in.nextLine());
+		
+		if(x%y == 0){
+	        System.out.printf("Bissexto\n");
+	    }
+	    else{
+	        System.out.printf("Nao bissexto\n");
+	    }
+}
+}
