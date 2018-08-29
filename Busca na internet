@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int entrada, calc;
+		
+		entrada = Integer.parseInt(in.nextLine());
+		
+		calc = (entrada*2)*2;
+		
+	    System.out.printf("%d\n",calc);
+}
+}
