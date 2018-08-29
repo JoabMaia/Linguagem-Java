@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int altura, idade, brinquedo = 0;
+		
+		altura = in.nextInt();
+		idade = in.nextInt();
+		
+		if(altura >= 150 && idade >= 12){
+	        brinquedo ++;
+	    }
+	    if(altura >= 140 && idade >= 14){
+	        brinquedo ++;
+	    }
+	    if(altura >= 170 || idade >= 16){
+	        brinquedo ++;
+	    }
+	    
+	    System.out.printf("%d\n", brinquedo);
+}
+}
