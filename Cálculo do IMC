@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double massa, altura, imc;
+		
+		massa = Double.parseDouble(in.nextLine());
+		altura = Double.parseDouble(in.nextLine());
+		
+		imc = massa/(Math.pow(altura, 2));
+		
+		System.out.printf("%.2f\n", imc);
+}
+}
