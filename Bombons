@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int avela, caramelo, passas, preco_avela, preco_caramelo, preco_passas;
+		double resultado;
+		
+		avela = Integer.parseInt(in.nextLine());
+		caramelo = Integer.parseInt(in.nextLine());
+		passas = Integer.parseInt(in.nextLine());
+		preco_avela = Integer.parseInt(in.nextLine());
+		preco_caramelo = Integer.parseInt(in.nextLine());
+		preco_passas = Integer.parseInt(in.nextLine());
+		
+		resultado = (avela * preco_avela) + (caramelo * preco_caramelo) + (passas * preco_passas);
+		
+		System.out.printf("Valor: R$%.2f", resultado);
+}
+}
