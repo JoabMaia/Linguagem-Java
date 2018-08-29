@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int quantidade, horas;
+		double resultado;
+		
+		quantidade = Integer.parseInt(in.nextLine());
+		horas = Integer.parseInt(in.nextLine());
+		
+		resultado = quantidade * horas;
+		
+		System.out.printf("Informe quanto ganha por hora:\n");
+		System.out.printf("Informe a quantidade mensal de trabalho:\n");
+		System.out.printf("Resultado: %.1f\n",resultado);
+}
+}
