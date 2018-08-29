@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class treino_aula{
+public class TreinoAula{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		int x1=1, y;
