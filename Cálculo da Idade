@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int ano_nascimento, ano_atual, idade;
+		
+		ano_nascimento = Integer.parseInt(in.nextLine());
+		ano_atual = Integer.parseInt(in.nextLine());
+		
+		idade = (ano_atual - ano_nascimento);
+		
+		System.out.printf("%d\n", idade);
+}
+}
