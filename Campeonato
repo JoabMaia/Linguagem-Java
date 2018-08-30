@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int cv, ce, cs, fv, fe, fs , totalc, totalf;
+		
+		cv = in.nextInt();
+		ce = in.nextInt();
+		cs = in.nextInt();
+		fv = in.nextInt();
+		fe = in.nextInt();
+		fs = in.nextInt();
+		
+		totalc = (cv*3) + ce ;
+	    totalf = (fv*3) + fe ;
+		
+	    if (totalc > totalf ){
+	        System.out.printf("C\n");
+	    }else{
+	        if (totalf > totalc ){
+	            System.out.printf("F\n");
+	        }else {
+	            if (totalc == totalf ){
+
+	                if (cs > fs){
+	                    System.out.printf("C\n");
+	                }else{
+	                    if (fs > cs){
+	                        System.out.printf("F\n");
+	                    }else{
+	                        System.out.printf("=\n");
+	                    }
+	                }
+	            }
+	        }
+	    }
+}
+}
