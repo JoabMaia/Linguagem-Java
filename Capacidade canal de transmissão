@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double tmv, a, d, cc, QDmax;
+		
+		tmv = Double.parseDouble(in.nextLine());
+		a = Double.parseDouble(in.nextLine());
+		d = Double.parseDouble(in.nextLine());
+		cc = Double.parseDouble(in.nextLine());
+		
+		QDmax = (tmv*5.2 + a*3.4 + d*1.5) / cc;
+		
+		System.out.printf("%.2f\n", QDmax);		
+}
+}
