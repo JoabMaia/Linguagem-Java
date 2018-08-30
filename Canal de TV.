@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int canal;
+		
+		canal = Integer.parseInt(in.nextLine());
+		
+		switch (canal){
+        	case 2:
+                	System.out.printf ("Digite um numero de um canal de tv:\n");
+                	System.out.printf("SBT\n");
+        	break;
+        	case 4:
+                	System.out.printf ("Digite um numero de um canal de tv:\n");
+                	System.out.printf("BAND\n");
+        	break;
+        	case 6:
+                	System.out.printf ("Digite um numero de um canal de tv:\n");
+                	System.out.printf("REDETV!\n");
+        	break;
+        	case 9:
+                	System.out.printf ("Digite um numero de um canal de tv:\n");
+                	System.out.printf("RECORD\n");
+        	break;
+        	case 13:
+                	System.out.printf ("Digite um numero de um canal de tv:\n");
+                	System.out.printf("GLOBO\n");
+        	break;
+        	default:
+                	System.out.printf ("Digite um numero de um canal de tv:\n");
+                	System.out.printf("Canal Invalido\n");
+        }    
+}
+}
