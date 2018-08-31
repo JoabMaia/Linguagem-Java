@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int qlivros;
+	    double m, qalunos;
+		
+		qlivros = Integer.parseInt(in.nextLine());
+		qalunos = Double.parseDouble(in.nextLine());
+		
+		m=qlivros/qalunos;
+
+	    if(m>=1/8 && m<1/9){
+	        System.out.printf("A\n");
+	    }
+	    else if(m<=1/9 && m>=1/12){
+	        System.out.printf("B\n");
+	    }
+	    else if(m<=1/13 && m>=1/18){
+	        System.out.printf("C\n");
+	    }
+	    else{
+	        System.out.printf("D\n");
+	    }	
+	}
+}
