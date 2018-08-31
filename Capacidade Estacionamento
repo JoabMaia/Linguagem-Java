@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class treino_aula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int quantidade;
+	    double total, total1, resultado;
+		
+		quantidade = Integer.parseInt(in.nextLine());
+		
+		total = 42 * 1.75;
+	    total1 = quantidade * 1.75;
+	    resultado = total - total1;
+		
+	    System.out.printf("%.2f", resultado);
+}
+}
