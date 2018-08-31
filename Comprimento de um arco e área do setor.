@@ -9,7 +9,7 @@ public class TreinoAula {
 		aeg = Double.parseDouble(in.nextLine());
 		
 		c = (aeg*pi*rdc)/180;
-	    s = (aeg*pi*(rdc*rdc))/360;
+	    	s = (aeg*pi*(rdc*rdc))/360;
 
 	    System.out.printf("%.2f\n", c);
 	    System.out.printf("%.2f\n", s);		
