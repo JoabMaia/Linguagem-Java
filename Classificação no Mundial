@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int soma=0, i, pontos;
+
+	    for(i=0; i<6; i++){
+	        pontos = Integer.parseInt(in.nextLine());
+
+	        soma += pontos;
+	    }
+	    if(soma >= 100){
+	        System.out.printf("Classificado\n");
+	    }
+	    else{
+	        System.out.printf("Eliminado\n");
+	    }		
+}
+}
