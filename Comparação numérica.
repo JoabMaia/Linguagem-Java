@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double numero, numero1;
+		
+		numero = Double.parseDouble(in.nextLine());
+		numero1 = Double.parseDouble(in.nextLine());
+		
+		if(numero>numero1){
+	        System.out.printf("Digite um numero:\n");
+	        System.out.printf("Digite outro numero:\n");
+	        System.out.printf("Maior numero: %.1f", numero);
+	    }
+	    else if(numero1 > numero){
+	    	System.out.printf("Digite um numero:\n");
+	    	System.out.printf("Digite outro numero:\n");
+	    	System.out.printf("Maior numero: %.1f", numero1);
+	    }
+	}
+}
