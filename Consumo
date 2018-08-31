@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int Km;
+		double l, media;
+		
+		Km = Integer.parseInt(in.nextLine());
+		l = Double.parseDouble(in.nextLine());
+		
+		media = Km/l;
+
+	    System.out.printf("%.3f km/l\n", media);
+	}
+}
