@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double valor, resultado;
+		
+		valor = Integer.parseInt(in.nextLine());
+		
+		resultado = valor * 1.1;
+		
+		System.out.printf("%.2f", resultado);
+	}
+}
