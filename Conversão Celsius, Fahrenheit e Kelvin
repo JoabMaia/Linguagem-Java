@@ -6,7 +6,7 @@ public class TreinoAula {
 		double F, K, C, temp;
 		char tipo_temp;
 		
-		tipo_temp = in.nextLine().charAt(0);;
+		tipo_temp = in.nextLine().charAt(0);
 		
 		if(tipo_temp == 'C') {
 		    temp = Double.parseDouble(in.nextLine());
