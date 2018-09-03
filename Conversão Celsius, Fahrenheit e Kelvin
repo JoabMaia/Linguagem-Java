@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double F, K, C, temp;
+		char tipo_temp;
+		
+		tipo_temp = in.nextLine().charAt(0);;
+		
+		if(tipo_temp == 'C') {
+		    temp = Double.parseDouble(in.nextLine());
+		    if(temp < -273) {
+		        System.out.printf("Valor de temperatura abaixo do minimo\n");
+		    }
+		    else {
+		        F = temp * (9 / 5) + 32;
+		        K = temp + 273;
+
+		        System.out.printf("%.2f %c\n", F,'F');
+		        System.out.printf("%.2f %c\n", K,'K');
+		    }
+		}
+		else if(tipo_temp == 'K'){
+			temp = Double.parseDouble(in.nextLine());
+		    if(temp < 0) {
+		    	System.out.printf("Valor de temperatura abaixo do minimo\n");
+		    }
+		    else {
+		        C = temp - 273;
+		        F = (1.8*(temp - 273)) + 32;
+
+		        System.out.printf("%.2f %c\n", C,'C');
+		        System.out.printf("%.2f %c\n", F,'F');
+		    }
+		}
+		else if (tipo_temp == 'F') {
+			temp = Double.parseDouble(in.nextLine());
+		    if(temp < -459.67) {
+		    	System.out.printf("Valor de temperatura abaixo do minimo\n");
+		    }
+		    else {
+		        C = (temp - 32) * (5 / 9);
+		        K = C + 273;
+
+		        System.out.printf("%.2f %c\n", C,'C');
+		        System.out.printf("%.2f %c\n", K,'K');
+		    }
+		}
+		else {
+			System.out.printf("Escada de medida de temperatura invalida");
+		}				
+	}
+}
