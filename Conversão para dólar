@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double d, vd = 3.55;
+		
+		d = Double.parseDouble(in.nextLine());
+		
+		System.out.printf("%.2f", d*vd);
+	}
+}
