@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int h,m,s,segundos;
+		
+		segundos = Integer.parseInt(in.nextLine());
+		
+		h=segundos/3600;
+		m=segundos%3600/60;
+		s=segundos%3600%60;
+		
+		System.out.printf("%d h %d m %d s",h,m,s);
+	}
+}
