@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double via,veic;
+		
+		via = Double.parseDouble(in.nextLine());
+		veic = Double.parseDouble(in.nextLine());
+		
+		if(veic>via && veic<=(0.2*via+via))
+			System.out.printf("85.13\n4");
+		else if(0.2*via+via<veic && veic<=0.5*via+via)
+			System.out.printf("127.69\n5");
+		else if(veic>0.5*via+via)
+			System.out.printf("574.62\n7");
+		else if(veic<=via)
+			System.out.printf("0.00\n0");
+	}
+}
