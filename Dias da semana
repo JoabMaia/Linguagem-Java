@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int dia;
+		
+		dia = Integer.parseInt(in.nextLine());
+		
+		switch(dia){
+
+	    case 1:
+	        System.out.printf("Domingo\n");
+	        break;
+	    case 2:
+	    	System.out.printf("Segunda\n");
+	        break;
+	    case 3:
+	    	System.out.printf("Terca\n");
+	        break;
+	    case 4:
+	    	System.out.printf("Quarta\n");
+	        break;
+	    case 5:
+	    	System.out.printf("Quinta\n");
+	        break;
+	    case 6:
+	    	System.out.printf("Sexta\n");
+	        break;
+	    case 7:
+	    	System.out.printf("Sabado\n");
+	        break;
+	    default:
+	    	System.out.printf("valor invalido\n");
+	    }
+	}
+}
