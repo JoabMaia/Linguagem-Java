@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int lado, diagonal;
+	    
+		lado = Integer.parseInt(in.nextLine());
+
+	    diagonal = (lado*(lado-3))/2;
+
+	    System.out.printf("%d", diagonal);
+	}
+}
