@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int valores[] = new int[4], i;
+				
+		for(i=0; i<4; i++){
+			 valores[i] = in.nextInt();
+	    }
+		
+	    System.out.printf("DIFERENCA = %d", (valores[0] * valores[1]) - (valores[2] * valores[3]));
+	}
+}
