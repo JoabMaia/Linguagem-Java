@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double a,b,c,delta,w, x1,x2;
+		
+		a = Double.parseDouble(in.nextLine());
+		b = Double.parseDouble(in.nextLine());
+		c = Double.parseDouble(in.nextLine());
+		
+		delta= Math.pow(b,2) - 4*a*c;
+		w= Math.pow(delta,0.5);
+	
+		if(a!=0){
+			if(delta<0){
+				System.out.printf("NRR");
+			}
+			else{
+				x1= (-b + w)/(2.0*a); 
+				x2= (-b - w)/(2.0*a);	
+				System.out.printf("%.2f\n%.2f",x1,x2);
+			}
+		}
+		else 
+			System.out.printf("NEESG");
+	}
+}
