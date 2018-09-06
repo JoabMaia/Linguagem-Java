@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n, n1 = 3, contador = 0;
+		
+		n = Integer.parseInt(in.nextLine());
+
+	    if(n >= 0){
+	        while(n>=n1){
+	            if(n%n1 == 0 && n1%3 == 0)
+	                contador ++;
+
+	            n1 ++;
+	        }
+	        if(contador == 0){
+	            System.out.printf("O numero nao possui divisores multiplos de 3!\n");
+	        }
+	        else{
+	        	System.out.printf("%d", contador);
+	        }
+
+	    	}
+	    	else{
+	    	System.out.printf("O numero nao possui divisores multiplos de 3!\n");
+	    	}
+	}
+}
