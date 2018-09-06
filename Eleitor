@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int idade;
+		
+		idade = Integer.parseInt(in.nextLine());
+		
+		if(idade >= 18 && idade <= 65){
+	        System.out.printf("eleitor obrigatorio\n");
+	    }
+	    else if(idade >= 16 && idade < 18 || idade > 65){
+	        System.out.printf("eleitor facultativo\n");
+	    }
+	    else{
+	        System.out.printf("nao eleitor\n");
+	    }
+	}
+}
