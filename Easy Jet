@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double largura, comprimento, altura;
+		
+		largura = Double.parseDouble(in.nextLine());
+		comprimento = Double.parseDouble(in.nextLine());
+		altura = Double.parseDouble(in.nextLine());
+		
+		if(largura <= 45 && comprimento <= 56 && altura <= 25){
+	        System.out.printf("PERMITIDA\n");
+	    }
+	    else{
+	        System.out.printf("PROIBIDA\n");
+	    }
+	}
+}
