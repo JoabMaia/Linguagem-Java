@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double media;
+	    int faltas;
+	    
+	    media = Double.parseDouble(in.nextLine());
+	    faltas = Integer.parseInt(in.nextLine());
+	    
+	    if(media>=9.5 && faltas<=10){
+	        System.out.printf("APROVADO COM LOUVOR\n");
+	    }
+	    else if(media>=7.0 && media<=9.5 && faltas<=10){
+	    	System.out.printf("APROVADO\n");
+	    }
+	    else if(media<=7.0 && faltas<=10){
+	    	System.out.printf("REPROVADO\n");
+	    }
+	    else if(media>=7.0 && faltas>10){
+	    	System.out.printf("REPROVADO POR FALTAS\n");
+	    }
+	}
+}
