@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double peso;
+		
+		peso = Double.parseDouble(in.nextLine());	
+
+	    if(peso>30){
+	        System.out.printf("PESO LIMITE EXCEDIDO");
+	    }
+	    else if(peso>=26){
+	    	System.out.printf("%.2f", ((peso-20)*32.75));
+	    }
+	    else if(peso>=21){
+	    	System.out.printf("%.2f", ((peso-20)*12.50));
+	    }
+	    else{
+	    	System.out.printf("%.2f", 0);
+	    }
+	}
+}
