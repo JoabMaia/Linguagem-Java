@@ -1,11 +1,10 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 public class TreinoAula {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		double media;
-	    int faltas;
+	    	int faltas;
 	    
 	    media = Double.parseDouble(in.nextLine());
 	    faltas = Integer.parseInt(in.nextLine());
