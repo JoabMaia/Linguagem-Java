@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double cateto1, cateto2, hipotenusa;
+		
+		cateto1 = Double.parseDouble(in.nextLine());
+		cateto2 = Double.parseDouble(in.nextLine());
+		
+		 hipotenusa = ((cateto1*cateto1) + (cateto2*cateto2));
+
+		 System.out.printf("%.2f",Math.sqrt(hipotenusa));
+	}
+}
