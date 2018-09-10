@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double valor, valor1, valor2, anos;
+		
+		valor = Double.parseDouble(in.nextLine());
+		anos = Double.parseDouble(in.nextLine());
+		
+		if(anos == 0) {
+			System.out.printf("%.2f",valor);
+		}
+		else if(anos == 1) {
+			valor1 = (valor * 3/100) + valor;
+			System.out.printf("%.2f", valor1);
+		}
+		else if(anos == 2) {
+			valor2 = (valor * 5/100) + valor;
+			System.out.printf("%.2f", valor2);
+		}
+	}
+}
