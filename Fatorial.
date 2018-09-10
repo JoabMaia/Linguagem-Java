@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n, fatorial=1;
+		
+		n = Integer.parseInt(in.nextLine());
+		
+		while(n>0){
+	        fatorial=fatorial*n;
+	        n--;
+	    }
+	    System.out.printf("Digite um numero inteiro:\n");
+	    System.out.printf("Fatorial: %d\n", fatorial);
+	}
+}
