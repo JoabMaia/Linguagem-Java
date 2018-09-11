@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double s_b, valor_h, valor_hex, s_f;
+	    int h_ex;
+	    
+	    s_b = Double.parseDouble(in.nextLine());
+	    h_ex = Integer.parseInt(in.nextLine());
+	    
+	    valor_h = (s_b/44);
+	    valor_hex = (valor_h+valor_h/10);
+
+	    s_f = h_ex * valor_hex + s_b;
+
+	    System.out.printf("%.2f", s_f);
+	}
+}
