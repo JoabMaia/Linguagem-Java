@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int c;
+		
+		c = Integer.parseInt(in.nextLine());
+		
+		if(c==1){
+	        System.out.printf("Nordeste\n");
+	    }
+	    else if(c==2){
+	        System.out.printf("Norte\n");
+	    }
+	    else if(c==3 || c==4){
+	        System.out.printf("Centro-Oeste\n");
+	    }
+	    else if(c>=5 && c<=9){
+	        System.out.printf("Sul\n");
+	    }
+	    else if(c>=10 && c<=15){
+	        System.out.printf("Sudeste\n");
+	    }
+}
+}
