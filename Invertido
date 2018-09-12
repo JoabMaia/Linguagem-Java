@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int num, rev, ret=0, i=1;
+		
+		num = Integer.parseInt(in.nextLine());
+		
+		while(i<=num){
+		       ret*=10;
+		       ret+=(num%(i*10)-num%i)/i;
+		       i*=10;
+		}
+		
+		System.out.printf("%d", ret);
+}
+}
