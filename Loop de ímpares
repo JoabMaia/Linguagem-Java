@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int num1, num2,i;
+		
+		num1 = in.nextInt();
+		num2 = in.nextInt();
+		
+		for(i=num1; i<num2+1; i++)
+	        if(i%2!=0)
+	            System.out.printf("%d\n", i);
+}
+}
