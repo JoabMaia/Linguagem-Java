@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String notas;
+		String String_notas;
+		String []vetor_notas;
+		Double nota_1, nota_2, nota_3, nota_4, media;
+		
+		String_notas = in.nextLine();
+		
+		vetor_notas = String_notas.split(" ", 4);
+		vetor_notas[0] = vetor_notas[0].replace(",", ".");
+		vetor_notas[1] = vetor_notas[1].replace(",", ".");
+		vetor_notas[2] = vetor_notas[2].replace(",", ".");
+		vetor_notas[3] = vetor_notas[3].replace(",", ".");
+		
+		nota_1 = Double.parseDouble(vetor_notas[0]);
+		nota_2 = Double.parseDouble(vetor_notas[1]);
+		nota_3 = Double.parseDouble(vetor_notas[2]);
+		nota_4 = Double.parseDouble(vetor_notas[3]);
+		
+		media = ((nota_1*1)+(nota_2*2)+(nota_3*3)+(nota_4*4))/10;
+		
+		if(media >= 9){
+	        System.out.printf("aprovado com louvor\n");
+	    }
+	    else if(media >= 7){
+	    	System.out.printf("aprovado\n");
+	    }
+	    else if(media < 3){
+	    	System.out.printf("reprovado\n");
+	    }
+	    else if(media >= 3 && media < 7){
+	    	System.out.printf("prova final\n");
+	    }
+}
+}
