@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double A, B, C, media;
+		
+		A = Double.parseDouble(in.nextLine());
+		B = Double.parseDouble(in.nextLine());
+		C = Double.parseDouble(in.nextLine());
+		
+		media = ((A * 2) + (B * 3) + (C * 5)) / (2+3+5);
+		
+		System.out.printf("MEDIA = %.1f\n", media);
+}
+}
