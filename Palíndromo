@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class TreinoAula{
+    public static String ePalindromo(String palavra) {
+        int meio = palavra.length() / 2;
+        for (int i = 0; i < meio; i++) {
+            if (palavra.charAt(i) != palavra.charAt(palavra.length()-1 - i)) {
+                return "NAO";
+            }
+        }
+        return "SIM";
+    }
+public static boolean ePalindromo2(String palavra) {
+    return palavra.equals(new StringBuilder(palavra).reverse().toString());
+}
+
+public static void main(String [] args) {
+	
+    System.out.println("1. " + ePalindromo("amor"));
+    System.out.println("2. " + ePalindromo("a"));
+    System.out.println("3. " + ePalindromo("ifpb"));
+    System.out.println("4. " + ePalindromo("joab"));
+    System.out.println("5. " + ePalindromo("eu amo Jesus"));
+}
+}
