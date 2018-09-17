@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class TreinoAula {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String nome;
+		
+		nome = in.nextLine();
+		
+		System.out.printf("Olah, %s!", nome);	
+	}
+}
