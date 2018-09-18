@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int i, tamanho;
+		
+	    tamanho = in.nextInt();
+
+	    for(i=1; i<10; i++){
+	        System.out.printf("%d X %d = %d\n", tamanho, i, tamanho * i);
+	    }
+}
+}
