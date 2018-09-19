@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class TreinoAula{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		double t,m,r=8.31,v;
+		
+		t = Double.parseDouble(in.nextLine());
+		m = Double.parseDouble(in.nextLine());
+		
+		v = Math.sqrt((3*r*t)/m);
+		
+		System.out.printf("%.2f", v);
+}
+}
