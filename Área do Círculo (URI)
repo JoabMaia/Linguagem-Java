@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Treino {
+public class Main {
 	
 	public static double Area(double raio) {
 		return 3.14159 * (raio * raio);
