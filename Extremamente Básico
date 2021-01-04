@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Treino {
+	
+	public static int soma(int A, int B) {
+		return A+B;
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		int A, B, X;
+		
+		A = in.nextInt();
+		B = in.nextInt();
+		
+		X = soma(A, B);
+		
+		System.out.printf("X = %d%n", X);
+		
+		in.close();
+	}
+
+}
