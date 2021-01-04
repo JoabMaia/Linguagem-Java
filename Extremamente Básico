@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Treino {
+public class Main {
 	
 	public static int Soma(int A, int B) {
 		return A+B;
