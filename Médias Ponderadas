@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args){
+ 
+        Scanner in = new Scanner(System.in);
+        
+        int ent;
+        double nota1, nota2, nota3;
+        
+        ent = in.nextInt();
+        
+        for(int i=0; i<ent; i++){
+            nota1 = in.nextDouble();
+            nota2 = in.nextDouble();
+            nota3 = in.nextDouble();
+            
+            System.out.printf("%.1f\n", (nota1*2 + nota2*3 + nota3*5)/(2.0+3.0+5.0));
+            
+        }
+        
+    }
+
+}
